@@ -104,6 +104,18 @@ body {
   font-size: 16px;
   line-height: 60px;
   color: #9a6437;
+
+  &::before {
+    display: inline-block;
+    content: "";
+    position: relative;
+    top: -5px;
+    margin-right: 10px;
+    width: 55px;
+    height: 0px;
+
+    border: 1.2px solid #9a6437;
+  }
 }
 
 .link {
@@ -125,6 +137,7 @@ body {
 
 .btn-wrapper {
   position: relative;
+  width: fit-content;
 
   &__line {
     width: calc(100% + 8px);
