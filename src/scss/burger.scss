@@ -44,7 +44,11 @@
 
 .nav-li-a {
   margin: 0;
-  transition: color 0.3s ease-in-out;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 60px;
+  color: #1b1a1a;
+
   display: block;
   padding: 4px 0;
   transition: all 0.1s ease-in-out;

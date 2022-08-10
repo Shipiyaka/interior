@@ -1,0 +1,84 @@
+.hero {
+  background-image: url("@img/hero/bg.jpg");
+  &__container {
+    padding-top: 156px;
+    padding-bottom: 277px;
+  }
+
+  &__banner {
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    padding: 22px;
+
+    &::before {
+      display: inline-block;
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 80%;
+      top: 0;
+      left: 0;
+      background-color: #6b6c71;
+    }
+
+    &::after {
+      display: inline-block;
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 80%;
+      top: 28px;
+      left: -28px;
+      background-color: #6b6c71;
+    }
+  }
+
+  &__uptitle {
+    margin-bottom: 7px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 60px;
+    color: #2c314b;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 60px;
+    color: #1b1a1a;
+  }
+
+  &__row {
+    display: flex;
+  }
+
+  &__text {
+    margin-bottom: 21px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 60px;
+    color: #878787;
+
+    &_black {
+      font-size: 24px;
+      color: #121211;
+    }
+  }
+
+  &__btn {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #1c1b1b;
+
+    &:hover {
+      background-color: transparent;
+      color: #1c1b1b;
+    }
+  }
+}

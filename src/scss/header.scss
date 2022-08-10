@@ -1,0 +1,33 @@
+.header {
+  background-color: #d3cbc5;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img {
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn {
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &_search {
+      margin-right: 27px;
+      background-image: url("@img/icons/search.svg");
+    }
+
+    &_cart {
+      background-image: url("@img/icons/cart.svg");
+    }
+  }
+}
