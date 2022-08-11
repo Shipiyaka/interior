@@ -2,6 +2,11 @@
 }
 
 @media (max-width: 992px) {
+  .slider__item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
   .arrivals__control:not(:last-child) {
     margin-right: 16px;
   }
@@ -23,6 +28,11 @@
 }
 
 @media (max-width: 768px) {
+  .slider__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
   .hero__banner {
     max-width: 385px;
   }
@@ -34,6 +44,14 @@
 }
 
 @media (max-width: 576px) {
+  .slider__control[data-slide="prev"] {
+    left: -30px;
+  }
+
+  .slider__control[data-slide="next"] {
+    right: -30px;
+  }
+
   .hero__banner {
     max-width: 270px;
   }
