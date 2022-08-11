@@ -91,12 +91,14 @@
   cursor: pointer;
   padding: 0 10px 10px 10px;
   margin-right: -10px;
+  position: relative;
+  top: 10px;
 }
 
 .burger-line {
   width: 30px;
   height: 2px;
-  background: rgb(255, 255, 255);
+  background: #6b6c71;
   transition: 0.3s all;
 }
 
@@ -117,11 +119,14 @@
   transform: rotate(45deg);
   background: #005140;
   height: 2px;
+  top: 5px;
 }
 
 #check-burger:checked ~ label .burger-span .burger-line.third-line {
   transform: rotate(-45deg);
+  position: relative;
   background: #005140;
+  top: 5px;
 }
 
 #check-burger:checked ~ label .burger-span .burger-line.fourth-line {

@@ -12,22 +12,29 @@
     display: flex;
     height: fit-content;
     flex-grow: 1;
+    position: relative;
 
     &:not(:last-child) {
+      padding-right: 15px;
       &::after {
-        margin: 0 15px;
         display: inline-block;
         content: "";
         width: 1px;
         height: 60px;
         background-color: #a6a6a6;
+        position: absolute;
+        top: 0;
+        right: 0;
       }
+    }
+
+    &:not(:first-child) {
+      margin-left: 15px;
     }
   }
 
   &__img {
     margin-right: 14px;
-    // align-self: start;
   }
 
   &__item {
