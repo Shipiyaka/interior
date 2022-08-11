@@ -1,0 +1,27 @@
+.special {
+  margin-top: 100px;
+  margin-bottom: 110px;
+
+  &__container {
+  }
+
+  &__uptitle {
+    margin-bottom: 21px;
+  }
+
+  &__row {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+  }
+
+  &__btn-wrapper {
+  }
+
+  &__btn {
+  }
+}

@@ -1,0 +1,28 @@
+.footer {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  &__icons {
+  }
+
+  &__link {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  &__icon {
+  }
+}
+
+.copyright {
+  font-family: "Nunito";
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 28px;
+  color: #424242;
+}

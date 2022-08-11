@@ -1,0 +1,126 @@
+.latest {
+  margin-bottom: 130px;
+
+  &__container {
+  }
+
+  &__uptitle {
+    text-align: center;
+
+    &::after {
+      display: inline-block;
+      content: "";
+      position: relative;
+      top: -5px;
+      margin-left: 10px;
+      width: 55px;
+      height: 0px;
+
+      border: 1.2px solid #9a6437;
+    }
+  }
+
+  &__title {
+    text-align: center;
+
+    margin-bottom: 44px;
+  }
+
+  &__columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    gap: 30px;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img {
+  }
+
+  &__item {
+    position: relative;
+    padding: 37px 30px 19px 30px;
+    border: 1px solid #acacac;
+  }
+
+  &__data {
+    position: absolute;
+    top: -35px;
+    left: 30px;
+    width: 42px;
+    height: 46px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-bottom: 3px solid #b47139;
+    filter: drop-shadow(0px 1px 7px rgba(0, 0, 0, 0.15));
+  }
+
+  &__descr {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+
+    &_bold {
+      font-weight: 400;
+      font-size: 17px;
+    }
+  }
+
+  &__row {
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 28px;
+    color: #808080;
+
+    &::before {
+      margin-right: 8px;
+      display: inline-block;
+      content: "";
+      position: relative;
+      top: 2px;
+      width: 15px;
+      height: 15px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+
+    &_author {
+      margin-right: 27px;
+
+      &::before {
+        background-image: url("@img/icons/avatar.svg");
+      }
+    }
+
+    &_comments {
+      &::before {
+        width: 16px;
+        background-image: url("@img/icons/comment.svg");
+      }
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #2e2d2d;
+  }
+
+  &__btn-wrapper {
+  }
+
+  &__btn {
+  }
+}
